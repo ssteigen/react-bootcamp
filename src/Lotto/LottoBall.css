@@ -1,0 +1,18 @@
+.LottoBall {
+  background-color: slateblue;
+  color: white;
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.LottoBall-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}

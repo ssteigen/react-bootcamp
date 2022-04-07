@@ -1,0 +1,58 @@
+.Coin {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  margin: 0 auto;
+  transition: -webkit-transform 1s ease-in;
+  transform-style: preserve-3d;
+}
+
+.Coin img {
+  width: 120px;
+}
+
+.side-a,
+.side-b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.side-a {
+  z-index: 100;
+}
+.side-b {
+  transform: rotateY(-180deg);
+}
+
+.Coin.heads {
+  transform: rotateY(0);
+}
+.Coin.tails {
+  transform: rotateY(180deg);
+}
+
+.Coin.heads.flipping {
+  animation: flipTails 2s ease-out forwards;
+}
+.Coin.tails.flipping {
+  animation: flipHeads 2s ease-out forwards;
+}
+
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(540deg);
+  }
+}
+@keyframes flipTails {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
