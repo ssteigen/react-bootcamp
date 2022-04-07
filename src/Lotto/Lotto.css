@@ -1,0 +1,12 @@
+.Lotto {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.Lotto-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.Lotto button {
+  align-self: center;
+}
