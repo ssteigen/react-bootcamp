@@ -7,14 +7,17 @@ import './App.css';
 // import ButtonList from 'ButtonList/ButtonList';
 // import Hangman from "Hangman/Hangman";
 // import Board from "LightsOut/Board";
+// import BoxList from 'ColorBoxes/BoxList';
 
-import BoxList from 'ColorBoxes/BoxList';
+import TodoList from 'TodoList/TodoList';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <BoxList />
+        <TodoList />
+
+        {/* <BoxList /> */}
 
         {/* <Board /> */}
 
