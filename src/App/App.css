@@ -1,5 +1,61 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.AppHeader {
+  background: thistle;
+  padding: 1em;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.AppHeader .logo {
+  cursor: pointer;
+}
+
+.AppHeader .logo:hover {
+  opacity: 0.5;
+}
+
+.AppHeader .left {
+  flex: none;
+}
+.AppHeader .right {
+  flex: 1;
+}
+
+.AppContent {
+  background-color: lavender;
+  flex: auto;
+  padding: 1em;
+  align-items: stretch;
+}
+
+.AppFooter {
+  background: thistle;
+  padding: 1em;
+  color: darkslategray;
+  font-size: 0.8em;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4b6db);
+}
+
+button {
+  padding: 0.5em 0.8em;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
 }
 
 /* .card {

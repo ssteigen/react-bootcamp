@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { choose } from "helpers";
 
+import './ButtonList.css';
+
 class ButtonList extends Component {
   static defaultProps = {
     colors: ["#e056fd", "#eb4d4b", "#badc58", "#f0932b"],
@@ -17,7 +19,7 @@ class ButtonList extends Component {
 
   render() {
     return (
-      <div className={`ButtonList ${this.props.className}`} style={{ backgroundColor: this.state.color }}>
+      <div className="ButtonList" style={{ backgroundColor: this.state.color }}>
         {this.props.colors.map((color, index) => {
           return (
             <button

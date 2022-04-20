@@ -1,12 +1,22 @@
 .RollDice {
+  padding: 2em;
+  text-align: center;
   display: flex;
   flex-flow: column nowrap;
 }
-.RollDice-container{
+.RollDice-title {
+  margin-top: 0;
+}
+.RollDice-content {
+  padding: 1em;
+}
+.RollDice-dice {
   display: flex;
   justify-content: center;
   align-content: center;
+  gap: 2em;
 }
 .RollDice button {
+  margin-top: 1em;
   align-self: center;
 }
