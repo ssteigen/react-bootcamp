@@ -2,16 +2,15 @@
   text-align: center;
 }
 
-.card {
+/* .card {
   border: solid 2px gray;
   padding: 1em 0 2em 0;
   margin: 1em auto auto;
   border-radius: 10px;
   width: 40em;
-}
+} */
 
-button {
-  /* width: 15em; */
+/* button {
   padding: 1em 2em;
   border: 0px;
   border-radius: 10px;
@@ -19,14 +18,15 @@ button {
   color: white;
   background-color: darkslateblue;
   margin-top: 2em;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: slateblue;
-}
+} */
 
+/*
 button:disabled {
   cursor: not-allowed;
   color: gray;
   background-color: darkgray;
-}
+} */
