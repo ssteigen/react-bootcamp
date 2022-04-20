@@ -3,8 +3,7 @@
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
   background-color: #212121;
-  min-height: 50vh;
-  padding-top: 50px;
+  padding: 8em 0em 12em 0em;
   color: white;
   text-align: center;
 }
@@ -38,6 +37,7 @@ table.Board tr:last-child td:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1em;
 }
 
 .neon-orange {

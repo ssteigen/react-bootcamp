@@ -7,7 +7,7 @@ import imgTails from "./cent-tail.png";
 
 class Coinflip extends Component {
   static defaultProps = {
-    sides: ['heads', 'tails'],
+    sides: ["heads", "tails"],
     coins: [
       { side: "heads", imgSrc: imgHeads },
       { side: "tails", imgSrc: imgTails },
@@ -19,7 +19,7 @@ class Coinflip extends Component {
     super(props);
 
     this.state = {
-      side: 'heads',
+      side: "heads",
       currCoin: null,
       numFlips: 0,
       numHeads: 0,
@@ -48,9 +48,9 @@ class Coinflip extends Component {
           numFlips: st.numFlips + 1,
           numHeads: st.numHeads + (newSide === "heads" ? 1 : 0),
           numTails: st.numTails + (newSide === "tails" ? 1 : 0),
-          flipping: false
-        }
-      })
+          flipping: false,
+        };
+      });
     }, 2000);
   }
 
@@ -60,19 +60,18 @@ class Coinflip extends Component {
 
   render() {
     return (
-      <div className={`Coinflip ${this.props.className}`}>
-        <h1>Let's flip a coin!</h1>
-        <Coin
-          side={this.state.side}
-          flipping={this.state.flipping}
-        />
+      <div className={`CoinFlip ${this.props.className} bg-gradient`}>
+        <h1 className="CoinFlip-title">Let's flip a coin!</h1>
+        <div className="CoinFlip-content">
+          <Coin side={this.state.side} flipping={this.state.flipping} />
+          <p>
+            Out of {this.state.numFlips} flips, there have been{" "}
+            {this.state.numHeads} heads and {this.state.numTails} tails.
+          </p>
+        </div>
         <button onClick={this.handleClick} disabled={this.state.flipping}>
           {this.state.flipping ? "Flipping" : "Flip Coin"}
         </button>
-        <p>
-          Out of {this.state.numFlips} flips, there have been{" "}
-          {this.state.numHeads} heads and {this.state.numTails} tails.
-        </p>
       </div>
     );
   }

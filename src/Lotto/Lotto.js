@@ -29,15 +29,15 @@ class Lotto extends Component {
 
   render() {
     return (
-      <section className={`Lotto ${this.props.className}`}>
-        <h1>{this.props.title}</h1>
-        <div className="Lotto-container">
+      <div className={`Lotto bg-gradient`}>
+        <h1 className="Lotto-title">{this.props.title}</h1>
+        <div className="Lotto-content">
           {this.state.nums.map((n, index) => (
             <LottoBall num={n} key={index} />
           ))}
         </div>
         <button onClick={this.handleClick}>Generate</button>
-      </section>
+      </div>
     );
   }
 }

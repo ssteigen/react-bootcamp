@@ -36,17 +36,20 @@ class RollDice extends Component {
 
   render() {
     return (
-      <div className={`RollDice ${this.props.className}`}>
-        <h1>{this.props.title}</h1>
-        <div className="RollDice-container">
-          {this.state.dice.map((n, index) => (
-            <Die rolling={this.state.rolling} num={n} key={index} />
-          ))}
+      <div className={`RollDice ${this.props.className} bg-gradient`}>
+        <h1 className="RollDice-title">{this.props.title}</h1>
+        <div className="RollDice-content">
+          <div className="RollDice-dice">
+            {this.state.dice.map((n, index) => (
+              <Die rolling={this.state.rolling} num={n} key={index} />
+            ))}
+          </div>
+          {this.state.total && <p>You rolled a {this.state.total}!</p>}
         </div>
         <button onClick={this.roll} disabled={this.state.rolling}>
           {this.state.rolling ? "Rolling" : "Roll Dice"}
         </button>
-        {this.state.total && <p>You rolled a {this.state.total}!</p>}
+
       </div>
     );
   }

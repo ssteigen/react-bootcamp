@@ -1,0 +1,16 @@
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.Nav li {
+  display: flex;
+}
+
+.NavItem.active {
+  opacity: .6;
+}

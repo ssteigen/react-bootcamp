@@ -1,0 +1,13 @@
+.CoinFlip {
+  padding: 2em;
+  text-align: center;
+}
+.CoinFlip-title {
+  margin-top: 0;
+}
+.CoinFlip-content {
+  padding: 1em;
+}
+.CoinFlip button {
+  margin-top: 1em;
+}
