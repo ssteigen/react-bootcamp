@@ -12,6 +12,8 @@ import TodoList from "TodoList/TodoList";
 import Board from "LightsOut/Board";
 import ButtonList from "ButtonList/ButtonList";
 
+import Game from 'Yahtzee/Game';
+
 const APPS = [
   { id: "rollDice", name: "Roll Dice", component: <RollDice /> },
   { id: "lotto", name: "Lottery", component: <Lotto /> },
@@ -45,6 +47,7 @@ class App extends Component {
             APPS.find((app) => app.id === this.state.activeApp).component
           ) : (
             <div className="Intro">
+              <Game />
               <h1>Intro</h1>
               <p>
                 Hi! I'm Savanah. I'm working my way through this{" "}

@@ -1,12 +1,12 @@
-.RuleRow {
+.Game .RuleRow {
   transition: all 0.2s;
 }
-.RuleRow-active:hover {
+.Game .RuleRow-active:hover {
   cursor: pointer;
   background: rgba(227, 242, 253, 0.5);
 }
 
-.RuleRow-disabled {
+.Game .RuleRow-disabled {
   background: linear-gradient(
     to right,
     rgba(209, 196, 233, 1) 0%,
@@ -26,25 +26,25 @@
     background-position: 0% 51%;
   }
 }
-.RuleRow-disabled td:first-child {
+.Game .RuleRow-disabled td:first-child {
   text-decoration: line-through;
 }
 
-.RuleRow-disabled:hover {
+.Game .RuleRow-disabled:hover {
   cursor: not-allowed;
 }
 
-.RuleRow td {
+.Game .RuleRow td {
   padding: 0.3em;
   border-bottom: solid 1px black;
 }
 
-.RuleRow-name {
+.Game .RuleRow-name {
   width: 50%;
   text-align: left;
 }
 
-.RuleRow-score {
+.Game .RuleRow-score {
   width: 50%;
   text-align: right;
 }
