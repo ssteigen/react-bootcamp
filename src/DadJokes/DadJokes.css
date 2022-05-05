@@ -1,0 +1,15 @@
+.DadJokes {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background: linear-gradient(
+    135deg,
+    rgba(240, 98, 146, .5) 0%,
+    rgba(240, 98, 146, .5) 50%,
+    rgba(240, 98, 146, .75) 50%,
+    rgba(240, 98, 146, .75) 100%
+  );
+  color: #78909c;
+}
