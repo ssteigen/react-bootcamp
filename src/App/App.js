@@ -14,6 +14,7 @@ import ButtonList from "ButtonList/ButtonList";
 import Game from "Yahtzee/Game";
 import ZenQuote from "ZenQuote/ZenQuote";
 import Deck from "CardDealer/Deck";
+import DadJokes from "DadJokes/DadJokes";
 
 const APPS = [
   { id: "rollDice", name: "Roll Dice", component: <RollDice /> },
@@ -25,7 +26,8 @@ const APPS = [
   { id: "todoList", name: "To Do List", component: <TodoList /> },
   { id: "yahtzee", name: "Yahtzee", component: <Game /> },
   { id: "zenQuote", name: "Zen Quote", component: <ZenQuote /> },
-  { id: "cardDealer", name: "Card Dealer", component: <Deck />}
+  { id: "cardDealer", name: "Card Dealer", component: <Deck /> },
+  { id: "dadJokes", name: "Dad Jokes", component: <DadJokes /> },
 ];
 
 class App extends Component {
@@ -76,7 +78,6 @@ class App extends Component {
         {/* <BoxList /> */}
 
         {/* <BoxContainer numBoxes={9} /> */}
-
       </div>
     );
   }
