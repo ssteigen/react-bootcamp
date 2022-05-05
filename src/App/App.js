@@ -12,7 +12,8 @@ import TodoList from "TodoList/TodoList";
 import Board from "LightsOut/Board";
 import ButtonList from "ButtonList/ButtonList";
 
-import Game from 'Yahtzee/Game';
+import Game from "Yahtzee/Game";
+import ZenQuote from "ZenQuote/ZenQuote";
 
 const APPS = [
   { id: "rollDice", name: "Roll Dice", component: <RollDice /> },
@@ -22,6 +23,8 @@ const APPS = [
   { id: "hangman", name: "Hangman", component: <Hangman /> },
   { id: "lightsOut", name: "Lights Out", component: <Board /> },
   { id: "todoList", name: "To Do List", component: <TodoList /> },
+  { id: "yahtzee", name: "Yahtzee", component: <Game /> },
+  { id: "zenQuote", name: "Zen Quote", component: <ZenQuote /> },
 ];
 
 class App extends Component {
@@ -40,14 +43,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppHeader apps={APPS} setActiveApp={this.setActiveApp} activeApp={this.state.activeApp} />
+        <AppHeader
+          apps={APPS}
+          setActiveApp={this.setActiveApp}
+          activeApp={this.state.activeApp}
+        />
 
         <div className="AppContent">
           {this.state.activeApp ? (
             APPS.find((app) => app.id === this.state.activeApp).component
           ) : (
             <div className="Intro">
-              <Game />
               <h1>Intro</h1>
               <p>
                 Hi! I'm Savanah. I'm working my way through this{" "}
@@ -68,13 +74,8 @@ class App extends Component {
 
         {/* <BoxList /> */}
 
-        {/* <Board /> */}
-
         {/* <BoxContainer numBoxes={9} /> */}
 
-        {/* <Lotto className='card'title="Mini Daily" maxNum={10} numBalls={4} /> */}
-
-        {/* <RollDice className='card' title="Roll more dice!!" numDice={4} /> */}
       </div>
     );
   }
