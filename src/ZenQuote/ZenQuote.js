@@ -25,7 +25,7 @@ class ZenQuote extends Component {
 
   render() {
     return (
-      <div class="ZenQuote">
+      <div className="ZenQuote">
         <h1>Always remember...</h1>
         {this.state.isLoaded ? (
           <p>{this.state.quote}</p>
