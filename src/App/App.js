@@ -11,9 +11,9 @@ import Lotto from "Lotto/Lotto";
 import TodoList from "TodoList/TodoList";
 import Board from "LightsOut/Board";
 import ButtonList from "ButtonList/ButtonList";
-
 import Game from "Yahtzee/Game";
 import ZenQuote from "ZenQuote/ZenQuote";
+import Deck from "CardDealer/Deck";
 
 const APPS = [
   { id: "rollDice", name: "Roll Dice", component: <RollDice /> },
@@ -25,6 +25,7 @@ const APPS = [
   { id: "todoList", name: "To Do List", component: <TodoList /> },
   { id: "yahtzee", name: "Yahtzee", component: <Game /> },
   { id: "zenQuote", name: "Zen Quote", component: <ZenQuote /> },
+  { id: "cardDealer", name: "Card Dealer", component: <Deck />}
 ];
 
 class App extends Component {
