@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-bootcamp/static/css/main.b5319393.css",
+    "main.js": "/react-bootcamp/static/js/main.6d28812c.js",
+    "static/js/787.b24b3bec.chunk.js": "/react-bootcamp/static/js/787.b24b3bec.chunk.js",
+    "static/media/cent-tail.png": "/react-bootcamp/static/media/cent-tail.93c98dd21d0d6c712d0b.png",
+    "static/media/cent-head.png": "/react-bootcamp/static/media/cent-head.04744ee7b1a13373c5d0.png",
+    "static/media/6.jpg": "/react-bootcamp/static/media/6.33ea70122206d18555de.jpg",
+    "static/media/5.jpg": "/react-bootcamp/static/media/5.bb0f0ce1c8b6c8fe0e79.jpg",
+    "static/media/4.jpg": "/react-bootcamp/static/media/4.b272e7f1b6733f1c232f.jpg",
+    "static/media/3.jpg": "/react-bootcamp/static/media/3.0db4986f22eed20b43f5.jpg",
+    "static/media/2.jpg": "/react-bootcamp/static/media/2.27a86c9e28f3136f0d56.jpg",
+    "static/media/1.jpg": "/react-bootcamp/static/media/1.9a23caa6d0d1e6035dd0.jpg",
+    "static/media/0.jpg": "/react-bootcamp/static/media/0.72059a7fffc7cf1cf38f.jpg",
+    "index.html": "/react-bootcamp/index.html",
+    "main.b5319393.css.map": "/react-bootcamp/static/css/main.b5319393.css.map",
+    "main.6d28812c.js.map": "/react-bootcamp/static/js/main.6d28812c.js.map",
+    "787.b24b3bec.chunk.js.map": "/react-bootcamp/static/js/787.b24b3bec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5319393.css",
+    "static/js/main.6d28812c.js"
+  ]
+}
