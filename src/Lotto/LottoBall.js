@@ -1,14 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./LottoBall.css";
 
-class LottoBall extends Component {
-  render() {
-    return (
-      <div className="LottoBall">
-        <div className="LottoBall-inner">{this.props.num}</div>
-      </div>
-    );
-  }
+export default function LottoBall({num}) {
+  return (
+    <div className="LottoBall">
+      <div className="LottoBall-inner">{num}</div>
+    </div>
+  );
 }
-
-export default LottoBall;
