@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiceOne,
@@ -10,46 +10,42 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Die.css";
 
-class Die extends Component {
-  getDiceIcon(num) {
-    let icon;
-    switch (num) {
-      case 1:
-        icon = faDiceOne;
-        break;
-      case 2:
-        icon = faDiceTwo;
-        break;
-      case 3:
-        icon = faDiceThree;
-        break;
-      case 4:
-        icon = faDiceFour;
-        break;
-      case 5:
-        icon = faDiceFive;
-        break;
-      case 6:
-        icon = faDiceSix;
-        break;
-      default:
-        break;
-    }
-
-    return icon;
+function getDiceIcon(num) {
+  let icon;
+  switch (num) {
+    case 1:
+      icon = faDiceOne;
+      break;
+    case 2:
+      icon = faDiceTwo;
+      break;
+    case 3:
+      icon = faDiceThree;
+      break;
+    case 4:
+      icon = faDiceFour;
+      break;
+    case 5:
+      icon = faDiceFive;
+      break;
+    case 6:
+      icon = faDiceSix;
+      break;
+    default:
+      break;
   }
 
-  render() {
-    const icon = this.getDiceIcon(this.props.num);
-
-    return (
-      <FontAwesomeIcon
-        className={`Die ${this.props.rolling && "wobble"}`}
-        icon={icon}
-        size="8x"
-      />
-    );
-  }
+  return icon;
 }
 
-export default Die;
+export default function Die({num, rolling}) {
+  const icon = getDiceIcon(num);
+
+  return (
+    <FontAwesomeIcon
+      className={`Die ${rolling && "wobble"}`}
+      icon={icon}
+      size="8x"
+    />
+  );
+}
